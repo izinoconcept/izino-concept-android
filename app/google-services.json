@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156591106264",
+    "project_id": "izino-concept",
+    "storage_bucket": "izino-concept.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156591106264:android:0d1195a4a7c048b1f40fad",
+        "android_client_info": {
+          "package_name": "com.sunmaria.app358"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXQPRf-SPZqgKWJw3pNkUdXm-1-_aGr_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

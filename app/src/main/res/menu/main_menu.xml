@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_home" android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" app:showAsAction="ifRoom" />
+    <item android:id="@+id/nav_about" android:title="@string/menu_about_us" app:showAsAction="never" />
+    <item android:id="@+id/nav_services" android:title="@string/menu_services" app:showAsAction="never" />
+    <item android:id="@+id/nav_projects" android:title="@string/menu_projects" app:showAsAction="never" />
+    <item android:id="@+id/nav_resources" android:title="@string/menu_resources" app:showAsAction="never" />
+    <item android:id="@+id/nav_contact" android:title="@string/menu_contact" app:showAsAction="never" />
+    <item android:id="@+id/action_call" android:title="@string/menu_call" app:showAsAction="never" />
+    <item android:id="@+id/action_email" android:title="@string/menu_email" app:showAsAction="never" />
+    <item android:id="@+id/action_refresh" android:title="@string/menu_refresh" app:showAsAction="never" />
+    <item android:id="@+id/action_share" android:title="@string/menu_share" app:showAsAction="never" />
+    <item android:id="@+id/action_privacy" android:title="@string/menu_privacy" app:showAsAction="never" />
+    <item android:id="@+id/action_terms" android:title="@string/menu_terms" app:showAsAction="never" />
+    <item android:id="@+id/action_about_app" android:title="@string/menu_about_app" app:showAsAction="never" />
+    <item android:id="@+id/action_exit" android:title="@string/menu_exit" app:showAsAction="never" />
+</menu>

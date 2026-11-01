@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">I.ZINO CONCEPT</string>
+    <string name="notification_channel_id">izino_updates</string>
+    <string name="notification_channel_name">I.ZINO CONCEPT updates</string>
+
+    <string name="about_text">We are professionals: Maintaining/building strong, durable and exciting workability between parties who share some forms of mutual agreement. Business &amp; Medical Consultants – I.ZINO CONCEPT.</string>
+    <string name="share_text">We are Business/Medical Consultants. Contact us via: i.zinoconcept@gmail.com, 08064373872, 08111345495, 08020576051</string>
+    <string name="exit_text">We are always on TIME, open on TIME and deliver on TIME.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_services">Services</string>
+    <string name="menu_projects">Projects</string>
+    <string name="menu_resources">Resources</string>
+    <string name="menu_contact">Contact</string>
+    <string name="menu_call">Call us</string>
+    <string name="menu_email">Email us</string>
+    <string name="menu_share">Share app</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_about_app">About the app</string>
+    <string name="menu_privacy">Privacy Policy</string>
+    <string name="menu_terms">Terms &amp; Conditions</string>
+    <string name="menu_exit">Exit</string>
+
+    <string name="exit_title">Exit I.ZINO CONCEPT?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="external_link_title">Open external link?</string>
+    <string name="external_link_message">This link leaves the I.ZINO CONCEPT app and opens in another app or browser:\n\n%1$s</string>
+    <string name="choose_number">Choose a number to call</string>
+    <string name="no_app_found">No app found to open this link</string>
+    <string name="share_via">Share via</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="download_started">Downloading…</string>
+    <string name="email_subject">Enquiry from I.ZINO CONCEPT app</string>
+</resources>
