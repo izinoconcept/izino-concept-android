@@ -10,12 +10,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        // Start.io (StartApp) legacy repository, as requested. Bintray is retired, so it is
-        // restricted to the com.startapp group and only consulted if Maven Central misses.
-        maven {
-            url 'https://startappdev.bintray.com/maven'
-            content { includeGroup 'com.startapp' }
-        }
     }
 }
 rootProject.name = 'IZinoConcept'
