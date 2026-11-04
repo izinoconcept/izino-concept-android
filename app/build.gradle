@@ -7,7 +7,7 @@ def admobAppId = System.getenv('ADMOB_APP_ID') ?: (project.findProperty('ADMOB_A
 
 android {
     namespace 'com.sunmaria.app358'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId 'com.sunmaria.app358'   // must match google-services.json
