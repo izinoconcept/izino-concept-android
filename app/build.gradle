@@ -3,7 +3,7 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
-def admobAppId = System.getenv('ADMOB_APP_ID') ?: (project.findProperty('ADMOB_APP_ID') ?: 'ca-app-pub-3940256099942544~3347511713')
+def admobAppId = System.getenv('ADMOB_APP_ID') ?: (project.findProperty('ADMOB_APP_ID') ?: 'ca-app-pub-4163326546433333~6128040408')
 
 android {
     namespace 'com.sunmaria.app358'
