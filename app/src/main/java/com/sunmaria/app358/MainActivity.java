@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
         // Start.io (StartApp) SDK – must run before setContentView()
         StartAppSDK.init(this, BuildConfig.STARTAPP_APP_ID);
 
+        StartAppSDK.setTestAdsEnabled(BuildConfig.DEBUG);
+
         if (BuildConfig.DISALLOW_SCREENSHOT) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         }
