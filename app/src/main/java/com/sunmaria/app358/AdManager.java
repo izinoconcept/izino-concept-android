@@ -130,16 +130,34 @@ public class AdManager {
         });
     }
 
+    private boolean startAppTurn = false; // alternate networks so both get a chance
+
     /** Call after a page finishes loading. Shows at most one interstitial per interval. */
     public void maybeShowInterstitial() {
         long now = SystemClock.elapsedRealtime();
         if (now - lastShown < BuildConfig.INTERSTITIAL_INTERVAL_MS) return;
         if (activity.isFinishing() || activity.isDestroyed()) return;
 
-        if (admobInterstitial != null) {
+        boolean admobReady = admobInterstitial != null;
+        boolean startReady = startAppReady && startAppAd != null;
+
+        if (startReady && (startAppTurn || !admobReady)) {
+            StartAppAd ad = startAppAd;
+            startAppAd = null;
+            startAppReady = false;
+            lastShown = now;
+            startAppTurn = false;
+            try {
+                ad.showAd();
+            } catch (Throwable t) {
+                Log.w(TAG, "Start.io show failed", t);
+            }
+            loadStartApp();
+        } else if (admobReady) {
             InterstitialAd ad = admobInterstitial;
             admobInterstitial = null;
             lastShown = now;
+            startAppTurn = true;
             ad.setFullScreenContentCallback(new FullScreenContentCallback() {
                 @Override
                 public void onAdDismissedFullScreenContent() {
@@ -147,17 +165,6 @@ public class AdManager {
                 }
             });
             ad.show(activity);
-        } else if (startAppReady && startAppAd != null) {
-            StartAppAd ad = startAppAd;
-            startAppAd = null;
-            startAppReady = false;
-            lastShown = now;
-            try {
-                ad.showAd();
-            } catch (Throwable t) {
-                Log.w(TAG, "Start.io show failed", t);
-            }
-            loadStartApp();
         } else {
             // Nothing ready yet: try to load both for next time
             loadAdmobInterstitial();
