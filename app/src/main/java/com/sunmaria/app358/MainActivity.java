@@ -119,9 +119,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Start.io (StartApp) SDK – must run before setContentView()
-        StartAppSDK.init(this, BuildConfig.STARTAPP_APP_ID);
-
+        // Start.io starts automatically from the manifest App ID (no manual init).
+        // Test ads only in debug builds.
         StartAppSDK.setTestAdsEnabled(BuildConfig.DEBUG);
 
         if (BuildConfig.DISALLOW_SCREENSHOT) {
