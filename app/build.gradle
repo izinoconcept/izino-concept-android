@@ -88,5 +88,4 @@ dependencies {
 
     // Start.io (StartApp) SDK + AdMob mediation adapter
     implementation 'com.startapp:inapp-sdk:5.+'
-    implementation 'io.start:admob-mediation:3.+'
 }
