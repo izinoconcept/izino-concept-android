@@ -1,8 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="appId">ca-app-pub-1713644718444084~3541044081</string>
-    <string name="interstitialId">ca-app-pub-1713644718444084/3020167898</string>
-    <string name="rewardedId">ca-app-pub-1713644718444084/8753594891</string>
-    <string name="bannerId">ca-app-pub-1713644718444084/9394004552</string>
-    <string name="mrecId">ca-app-pub-1713644718444084/5999686466</string>
-    <string name="nativeId">ca-app-pub-1713644718444084/6127431557</string>
+    <!-- AdMob App ID -->
+    <string name="admob_app_id">ca-app-pub-4163326546433333~6128040408</string>
+
+    <!-- Ad Unit IDs -->
+    <string name="admob_app_open_id">ca-app-pub-4163326546433333/4030499446</string>
+    <string name="admob_banner_id">ca-app-pub-4163326546433333/3118733681</string>
+    <string name="admob_interstitial_id">ca-app-pub-4163326546433333/4240243666</string>
+    <string name="admob_native_id">ca-app-pub-4163326546433333/4127711520</string>
+    <string name="admob_rewarded_id">ca-app-pub-4163326546433333/6074208851</string>
+    <string name="admob_rewarded_interstitial_id">ca-app-pub-4163326546433333/6574355000</string>
 </resources>
