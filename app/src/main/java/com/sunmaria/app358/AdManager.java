@@ -44,7 +44,7 @@ public class AdManager {
      *   1 = backup only: used only when AdMob has no interstitial ready   (recommended)
      *   2 = alternate with AdMob (every second interstitial is Start.io)
      */
-    private static final int STARTAPP_INTERSTITIAL_MODE = 1;
+    private static final int STARTAPP_INTERSTITIAL_MODE = 0;
 
     /** Show a Start.io banner when the AdMob banner fails to load. */
     private static final boolean STARTAPP_BANNER_FALLBACK = true;
